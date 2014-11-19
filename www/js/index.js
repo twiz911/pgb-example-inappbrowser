@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        var ref = window.open('http://www.slicedbreadenterprises.com/cf-ios/', '_blank', 'location=no','toolbar=no');
+        var ref = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu', '_blank', 'location=no','toolbar=no');
 
         //ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
         //ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
