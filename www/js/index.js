@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        var ref = window.open('http://currencyfair.postaffiliatepro.com/scripts/click.php?a_aid=andyh&a_bid=11110002&desturl=https%3A%2F%2Fwww.currencyfair.com%2F%3Fchannel%3DRWRJX1#andyh', '_blank', 'location=no','toolbar=no');
+        var ref = window.open('http://www.slicedbreadenterprises.com/cf-ios/', '_blank', 'location=no','toolbar=no');
 
         //ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
         //ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
