@@ -18,10 +18,10 @@
 
     <preference name="phonegap-version" value="3.0.0" /> 
 
-    <gap:plugin name="com.slicedbreadenterprises.currencyfair" />
+    <gap:plugin name="org.apache.cordova.core.inappbrowser" />
 
-	<code>
-	<access origin="www.slicedbreadenterprises.com " />
-	</code>
+<code>
+<access origin="www.slicedbreadenterprises.com " />
+</code>
 
 </widget>
