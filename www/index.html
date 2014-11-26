@@ -19,43 +19,18 @@
 -->
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>CurrencyFair</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <div class="event received">
-                  <p>Device is Ready</p>
-                </div>
-            </div>
-        </div>
+
         <script type="text/javascript" src="phonegap.js"></script>
+<!--
         <script type="text/javascript" src="js/index.js"></script>
+-->
         <script type="text/javascript">
             app.initialize();
-
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady(){
-    document.addEventListener("backbutton", function(e){
-       if($.mobile.activePage.is('#homepage')){
-           e.preventDefault();
-           navigator.app.exitApp();
-       }
-       else {
-           navigator.app.backHistory()
-       }
-    }, false);
-}
-
 var ref = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu', '_blank', 'location=no','toolbar=no');
-
         </script>
+
     </body>
 </html>
