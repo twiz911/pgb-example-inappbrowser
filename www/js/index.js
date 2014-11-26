@@ -37,6 +37,17 @@ var app = {
 
         var ref = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu', '_blank', 'location=no','toolbar=no');
 
+
+document.addEventListener("backbutton", function(e){
+if($.mobile.activePage.is('#homepage')){
+   e.preventDefault();
+   navigator.app.exitApp();
+}
+else {
+   navigator.app.backHistory()
+}
+}, false);
+
         //ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
         //ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
         //ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
