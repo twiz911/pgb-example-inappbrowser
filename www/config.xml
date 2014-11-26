@@ -8,6 +8,8 @@
 
     <name>CurrencyFair</name>
 
+<icon src="icon.png" />
+
     <description>
         Currency Exchange via CurrencyFair
     </description>
