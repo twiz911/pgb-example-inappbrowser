@@ -40,7 +40,21 @@
         <script type="text/javascript">
             app.initialize();
 
-        var ref = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu', '_blank', 'location=no','toolbar=no');
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady(){
+    document.addEventListener("backbutton", function(e){
+       if($.mobile.activePage.is('#homepage')){
+           e.preventDefault();
+           navigator.app.exitApp();
+       }
+       else {
+           navigator.app.backHistory()
+       }
+    }, false);
+}
+
+var ref = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu', '_blank', 'location=no','toolbar=no');
 
         </script>
     </body>
