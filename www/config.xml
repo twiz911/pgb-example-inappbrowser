@@ -18,7 +18,7 @@
         Sliced Bread Enterprises
     </author>
 
-    <preference name="phonegap-version" value="3.5.0" /> 
+    <preference name="phonegap-version" value="3.6.3" /> 
 
     <gap:plugin name="org.apache.cordova.core.inappbrowser" />
 
