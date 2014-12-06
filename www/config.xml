@@ -15,7 +15,9 @@
 	<gap:platform name="android" minVersion="2.1"/>
 
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	<gap:plugin name="org.apache.cordova.splashscreen" />
+
+
+	
 
 	<!-- PG version -->
 	<preference name="phonegap-version" value="3.6.3" />
@@ -27,13 +29,17 @@
 
 	<access origin="*" />
 
+
+
 <!-- Icon from http://all-free-download.com/free-vector/vector-misc/golden_dollar_sign_vector_293499.html -->
 
+
+<!-- THIS DOES NOT WORK CANNOT SEE SPLASH SCREEN -->
+<gap:plugin name="org.apache.cordova.splashscreen" />
 <!-- Do not auto hide splash on iOS -->
 <preference name="AutoHideSplashScreen" value="false" />
 <!-- Do not auto hide splash on Android -->
 <preference name="SplashScreenDelay" value="10000"/>
-
 
 <gap:splash src="splash.png" />
     <icon src="res/icon/icon.png" />
