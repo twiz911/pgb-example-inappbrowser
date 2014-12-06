@@ -26,7 +26,7 @@
     function onDeviceReady() {
          alert('Device is ready!');
 
-iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu', '_blank', 'location=no','toolbar=no');
+iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu','_self','location=no');
 
          //iabRef = window.open('http://apache.org', '_blank', 'location=yes');
          //iabRef.addEventListener('loadstart', iabLoadStart);
@@ -37,14 +37,10 @@ iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_s
   </head>
   <body>
   <p>link test<br /><br />
-  <a href="#" onclick="window.open('http://www.wikipedia.org','_self','location=yes')">Wikipedia (webview)</a><br /><br />
+  <a href="#" onclick="window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu','_self','location=yes')">Wikipedia (webview)</a><br /><br />
   <a href="#" onclick="window.open('http://www.wikipedia.org','_blank','location=yes')">Wikipedia (inAppBrowser)</a><br /><br />
   <a href="#" onclick="window.open('http://www.wikipedia.org','_system','location=yes')">Wikipedia (mobile browser)</a><br /><br />
   </p>
-  <p>button test<br /><br />
-  <button type="button" onclick="window.open('http://www.wikipedia.org','_self','location=yes')">Wikipedia (webview)</button><br /><br />
-  <button type="button" onclick="window.open('http://www.wikipedia.org','_blank','location=yes')">Wikipedia (inAppBrowser)</button><br /><br />
-  <button type="button" onclick="window.open('http://www.wikipedia.org','_system','location=yes')">Wikipedia (mobile browser)</button><br /><br />  
   </p>
   </body>
 </html>
