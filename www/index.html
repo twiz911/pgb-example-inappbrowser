@@ -19,9 +19,6 @@
     width: 100%;
     display: none;
     z-index: 1000;
-/*
-    background-color: #fff;
-*/
 }
 .loader > .fa {
     position: absolute;
@@ -83,39 +80,6 @@ $('.loader').remove();
 </script>
 
 
-
-
-
-<!-- center image -->
-<style>
-
-html, body {
-	height: 99%
-}
-
-body {
-    margin-top: 20px;
-
-}
-
-.app {
-  display: table;
-  height: 98%;
-  width: 100%;
-  background-color: white;
-}
-.content {
-  width: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-</style>
-
-
-
-
-
     <script type="text/javascript" charset="utf-8">
     // Wait for Cordova to load
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -164,11 +128,7 @@ document.addEventListener('deviceready', function() {
 
 
 <div class="app">
-<div class="loader"><i class="fa fa-spinner fa-spin fa-lg"></i></div>
-
-<div class="content">
-<img src="res/icon/icon.png" alt="logo"/>
-</div>
+<div class="loader"><img class="fa fa-spinner fa-spin fa-lg" src="res/icon/icon.png" alt="logo"/></i></div>
 
 </div>
 
