@@ -43,11 +43,12 @@ iframe {
 </style>
 <script type='text/javascript'>//<![CDATA[ 
 $(window).load(function(){
+
+
 jQuery(document).ready(function ($) {
     $app = $('.app');
 
     // Attach behavior to Login button.
-var loadIframe = function() {
         $app.addClass('loading');
 
         // Create an <iframe>.
@@ -73,9 +74,9 @@ $('.loader').remove();
 
         });
 
-}
-
 });
+
+
 });//]]>  
 </script>
 
@@ -102,8 +103,39 @@ $('.loader').remove();
     //
     function onDeviceReady() {
 
-loadIframe();
-//         alert('Device is ready!');
+
+
+jQuery(document).ready(function ($) {
+    $app = $('.app');
+
+    // Attach behavior to Login button.
+        $app.addClass('loading');
+
+        // Create an <iframe>.
+        $iframe = $('<iframe>');
+
+        // Set url of <iframe> to desired redirect URL.
+        // Note: the URL must be in the same domain, or set special HTTP headers to allow rendering inside an <iframe>.
+        $iframe.attr({
+            src: 'http://www.slicedbreadenterprises.com/cf-ios/index.html'
+        });
+
+        // Add <iframe> we just created to DOM.
+        $iframe.appendTo($('body'));
+
+        // When <iframe> has been loaded, remove <div> containing login button and
+        // loading spinner to reveal <iframe>.
+        $iframe.load(function () {
+
+// I had to modify this
+$('.app').remove();
+$iframe.show();
+$('.loader').remove();
+
+        });
+
+});
+
 
 //iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=no');
 //iabRef = window.open('http://www.wikipedia.org','_self','location=yes');
