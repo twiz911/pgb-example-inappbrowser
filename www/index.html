@@ -47,6 +47,7 @@ jQuery(document).ready(function ($) {
     $app = $('.app');
 
     // Attach behavior to Login button.
+var loadIframe = function() {
         $app.addClass('loading');
 
         // Create an <iframe>.
@@ -55,7 +56,7 @@ jQuery(document).ready(function ($) {
         // Set url of <iframe> to desired redirect URL.
         // Note: the URL must be in the same domain, or set special HTTP headers to allow rendering inside an <iframe>.
         $iframe.attr({
-            src: 'http://www.wikipedia.org'
+            src: 'http://www.slicedbreadenterprises.com/cf-ios/index.html'
         });
 
         // Add <iframe> we just created to DOM.
@@ -65,14 +66,14 @@ jQuery(document).ready(function ($) {
         // loading spinner to reveal <iframe>.
         $iframe.load(function () {
 
-
-
 // I had to modify this
 $('.app').remove();
 $iframe.show();
 $('.loader').remove();
 
         });
+
+}
 
 });
 });//]]>  
@@ -100,7 +101,9 @@ $('.loader').remove();
     // Cordova is ready
     //
     function onDeviceReady() {
-         alert('Device is ready!');
+
+loadIframe();
+//         alert('Device is ready!');
 
 //iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=no');
 //iabRef = window.open('http://www.wikipedia.org','_self','location=yes');
@@ -109,6 +112,9 @@ $('.loader').remove();
          //iabRef.addEventListener('loadstart', iabLoadStart);
          //iabRef.addEventListener('loadstop', iabLoadStop);
          //iabRef.addEventListener('exit', iabClose);
+
+
+
     }
     </script>
   </head>

@@ -17,7 +17,7 @@
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 
 	<!-- PG version -->
-	<preference name="phonegap-version" value="3.1.0" />
+	<preference name="phonegap-version" value="3.6.3" />
 	<!--
 		We don't really need specific permissions,
 		but PGB will add some.
@@ -25,5 +25,7 @@
 	<preference name="permissions" value="none"/>
 
 	<access origin="*" />
+
+<gap:splash src="splash.png" />
 
 </widget>
