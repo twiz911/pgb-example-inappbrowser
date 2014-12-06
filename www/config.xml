@@ -23,7 +23,7 @@
     <gap:plugin name="org.apache.cordova.core.inappbrowser" />
 
 <code>
-<access origin="*" />
+<access origin="www.bbc.co.uk" />
 </code>
 
 </widget>
