@@ -26,7 +26,7 @@
 
 	<access origin="*" />
 
-
+<!-- Icon from http://all-free-download.com/free-vector/vector-misc/golden_dollar_sign_vector_293499.html -->
     <icon src="res/icon/icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
@@ -45,5 +45,6 @@
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
 <gap:splash src="splash.png" />
+<preference name="SplashScreenDelay" value="10000" />
 
 </widget>
