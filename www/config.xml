@@ -28,6 +28,8 @@
 	<access origin="*" />
 
 <!-- Icon from http://all-free-download.com/free-vector/vector-misc/golden_dollar_sign_vector_293499.html -->
+
+<gap:splash src="splash.png" />
     <icon src="res/icon/icon.png" />
     <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
     <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
@@ -37,9 +39,6 @@
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
-<gap:splash src="splash.png" />
-<preference name="SplashScreen" value="splash" />
-<preference name="SplashScreenDelay" value="10000" />
-<preference name="AutoHideSplashScreen" value="false" />
+
 
 </widget>
