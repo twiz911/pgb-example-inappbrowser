@@ -83,7 +83,7 @@ $('.loader').remove();
 </script>
 
 
-
+<!--
     <script type="text/javascript" charset="utf-8">
     // Wait for Cordova to load
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -122,6 +122,8 @@ $('.loader').remove();
 
     }
     </script>
+-->
+
   </head>
   <body>
 
