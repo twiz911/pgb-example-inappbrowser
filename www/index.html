@@ -95,6 +95,7 @@ document.addEventListener("offline", onOffline, false);
 
 function onOffline() {
 alert('This application requires an internet connection');
+navigator.app.exitApp();
 }
 
     function onDeviceReady() {
