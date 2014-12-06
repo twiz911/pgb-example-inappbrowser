@@ -3,9 +3,9 @@
   <head>
     <title>CurrencyFair</title>
 
-<!--
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
--->
+
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
 
 <!-- Spinner while loading -->
 <script type="application/x-javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -115,7 +115,7 @@ body {
 
 
 
-<!--
+
     <script type="text/javascript" charset="utf-8">
     // Wait for Cordova to load
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -139,7 +139,9 @@ body {
 
 
 
-
+document.addEventListener('deviceready', function() {
+  navigator.splashscreen.hide();
+});
 
 
 //iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=no');
@@ -154,7 +156,9 @@ body {
 
     }
     </script>
--->
+
+
+
 
   </head>
   <body>
