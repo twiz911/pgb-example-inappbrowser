@@ -47,7 +47,6 @@ jQuery(document).ready(function ($) {
     $app = $('.app');
 
     // Attach behavior to Login button.
-$('#cf').click(function() {
         $app.addClass('loading');
 
         // Create an <iframe>.
@@ -69,20 +68,12 @@ $('#cf').click(function() {
 
 
 // I had to modify this
-//            $('.app').remove();
+$('.app').remove();
 $iframe.show();
 $('.loader').remove();
-$('#scr_mainMenu').hide();
-$('#src_info_about').hide();
-
-
-$('#backButton').click(function() {
-location.reload();
-});
-
 
         });
-    });
+
 });
 });//]]>  
 </script>
@@ -112,7 +103,7 @@ location.reload();
          alert('Device is ready!');
 
 //iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=no');
-iabRef = window.open('http://www.wikipedia.org','_self','location=yes');
+//iabRef = window.open('http://www.wikipedia.org','_self','location=yes');
 
          //iabRef = window.open('http://apache.org', '_blank', 'location=yes');
          //iabRef.addEventListener('loadstart', iabLoadStart);
