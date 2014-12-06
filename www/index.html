@@ -4,6 +4,91 @@
     <title>CurrencyFair</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+
+<!-- Spinner while loading -->
+<script type="application/x-javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<style type='text/css'>
+    .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 1000;
+    background-color: #fff;
+}
+.loader > .fa {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.app.loading > .loader {
+    display: block;
+}
+html, body, iframe {
+    width:100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+display: block;
+}
+iframe {
+    position: absolute;
+    height: 100%;
+}
+</style>
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+jQuery(document).ready(function ($) {
+    $app = $('.app');
+
+    // Attach behavior to Login button.
+$('#cf').click(function() {
+        $app.addClass('loading');
+
+        // Create an <iframe>.
+        $iframe = $('<iframe>');
+
+        // Set url of <iframe> to desired redirect URL.
+        // Note: the URL must be in the same domain, or set special HTTP headers to allow rendering inside an <iframe>.
+        $iframe.attr({
+            src: 'http://www.wikipedia.org'
+        });
+
+        // Add <iframe> we just created to DOM.
+        $iframe.appendTo($('body'));
+
+        // When <iframe> has been loaded, remove <div> containing login button and
+        // loading spinner to reveal <iframe>.
+        $iframe.load(function () {
+
+
+
+// I had to modify this
+//            $('.app').remove();
+$iframe.show();
+$('.loader').remove();
+$('#scr_mainMenu').hide();
+$('#src_info_about').hide();
+
+
+$('#backButton').click(function() {
+location.reload();
+});
+
+
+        });
+    });
+});
+});//]]>  
+</script>
+
+
+
     <script type="text/javascript" charset="utf-8">
     // Wait for Cordova to load
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -26,7 +111,8 @@
     function onDeviceReady() {
          alert('Device is ready!');
 
-iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_scr_mainMenu','_self','location=no');
+//iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=no');
+iabRef = window.open('http://www.wikipedia.org','_self','location=yes');
 
          //iabRef = window.open('http://apache.org', '_blank', 'location=yes');
          //iabRef.addEventListener('loadstart', iabLoadStart);
@@ -36,6 +122,12 @@ iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_s
     </script>
   </head>
   <body>
+
+
+<div class="app">
+<div class="loader"><i class="fa fa-spinner fa-spin fa-lg"></i></div>
+
+
   <a href="#" onclick="window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=yes')">SB (webview)</a><br /><br />
    <a href="#" onclick="window.open('http://www.slicedbreadenterprises.com','_self','location=yes')">SB (webview)</a><br /><br />
  
@@ -47,5 +139,8 @@ iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html#_s
   <a href="#" onclick="window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_system','location=yes')">SB (mobile browser)</a><br /><br />
   </p>
   </p>
+
+</div>
+
   </body>
 </html>

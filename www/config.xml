@@ -6,7 +6,7 @@
 	
 	<name>CurrencyFair</name>
 	<description>Currency Exchange via CurrencyFair</description>
-	<icon>icon.png</icon>
+	<icon src="icon.png" />
 
 	<author href="https://www.slicedbreadenterprises.com" email="ios@slicedbreadenterprises.com">SlicedBreadEnterprises</author>
 
