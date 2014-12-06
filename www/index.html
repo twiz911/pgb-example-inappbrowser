@@ -3,7 +3,9 @@
   <head>
     <title>CurrencyFair</title>
 
+<!--
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+-->
 
 <!-- Spinner while loading -->
 <script type="application/x-javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -80,6 +82,38 @@ $('.loader').remove();
 </script>
 
 
+
+
+
+<!-- center image -->
+<style>
+
+html, body {
+	height: 99%
+}
+
+body {
+    margin-top: 40px;
+
+}
+
+.app {
+  display: table;
+  height: 98%;
+  width: 100%;
+  background-color: black;
+}
+.content {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+</style>
+
+
+
+
 <!--
     <script type="text/javascript" charset="utf-8">
     // Wait for Cordova to load
@@ -127,6 +161,10 @@ $('.loader').remove();
 
 <div class="app">
 <div class="loader"><i class="fa fa-spinner fa-spin fa-lg"></i></div>
+
+<div class="content">
+<img src="splash.png" alt="logo"/>
+</div>
 
 </div>
 
