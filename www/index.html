@@ -3,7 +3,9 @@
   <head>
     <title>CurrencyFair</title>
 
+<!--
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+-->
 
 
 <!-- Spinner while loading -->
@@ -81,7 +83,7 @@ $('.loader').remove();
 </script>
 
 
-
+<!--
     <script type="text/javascript" charset="utf-8">
     // Wait for Cordova to load
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -105,36 +107,7 @@ $('.loader').remove();
 
 
 
-jQuery(document).ready(function ($) {
-    $app = $('.app');
 
-    // Attach behavior to Login button.
-        $app.addClass('loading');
-
-        // Create an <iframe>.
-        $iframe = $('<iframe>');
-
-        // Set url of <iframe> to desired redirect URL.
-        // Note: the URL must be in the same domain, or set special HTTP headers to allow rendering inside an <iframe>.
-        $iframe.attr({
-            src: 'http://www.slicedbreadenterprises.com/cf-ios/index.html'
-        });
-
-        // Add <iframe> we just created to DOM.
-        $iframe.appendTo($('body'));
-
-        // When <iframe> has been loaded, remove <div> containing login button and
-        // loading spinner to reveal <iframe>.
-        $iframe.load(function () {
-
-// I had to modify this
-$('.app').remove();
-$iframe.show();
-$('.loader').remove();
-
-        });
-
-});
 
 
 //iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=no');
@@ -149,6 +122,8 @@ $('.loader').remove();
 
     }
     </script>
+-->
+
   </head>
   <body>
 
@@ -156,7 +131,7 @@ $('.loader').remove();
 <div class="app">
 <div class="loader"><i class="fa fa-spinner fa-spin fa-lg"></i></div>
 
-
+<!--
   <a href="#" onclick="window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=yes')">SB (webview)</a><br /><br />
    <a href="#" onclick="window.open('http://www.slicedbreadenterprises.com','_self','location=yes')">SB (webview)</a><br /><br />
  
@@ -168,6 +143,7 @@ $('.loader').remove();
   <a href="#" onclick="window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_system','location=yes')">SB (mobile browser)</a><br /><br />
   </p>
   </p>
+-->
 
 </div>
 
