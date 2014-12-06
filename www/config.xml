@@ -22,6 +22,9 @@
 <preference name="StatusBarOverlaysWebView" value="false" />
 
 
+<gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
+
+
 	<!-- PG version -->
 	<preference name="phonegap-version" value="3.6.3" />
 	<!--
