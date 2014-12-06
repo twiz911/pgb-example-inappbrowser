@@ -6,10 +6,9 @@
 	
 	<name>CurrencyFair</name>
 	<description>Currency Exchange via CurrencyFair</description>
+	<icon>icon.png</icon>
 
-	<author href="https://sub.example.com" email="someone@email.com">
-		Yourname
-	</author>
+	<author href="https://www.slicedbreadenterprises.com" email="ios@slicedbreadenterprises.com">SlicedBreadEnterprises</author>
 
 	<!-- @note gap:platforms not working in PGB! -->
 	<gap:platform name="ios" />
