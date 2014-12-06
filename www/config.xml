@@ -8,6 +8,8 @@
 
     <name>CurrencyFair</name>
 
+<access origin="*" />
+
 <icon src="icon.png" />
 
     <description>
@@ -20,14 +22,13 @@
 
     <preference name="phonegap-version" value="3.6.3" /> 
 
-    <gap:plugin name="org.apache.cordova.core.inappbrowser" />
-
-<code>
-<access origin="www.bbc.co.uk" />
-</code>
-
+<feature name="InAppBrowser">
+  <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
+</feature>
 <feature name="InAppBrowser">
     <param name="ios-package" value="CDVInAppBrowser" />
 </feature>
+
+<gap:plugin name="org.apache.cordova.inappbrowser"  />
 
 </widget>
