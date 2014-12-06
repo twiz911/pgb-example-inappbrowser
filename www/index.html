@@ -4,6 +4,7 @@
     <title>CurrencyFair</title>
 
 
+
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 
 
@@ -116,6 +117,13 @@ loadIframe();
     function onDeviceReady() {
 document.addEventListener('deviceready', function() {
   navigator.splashscreen.hide();
+
+
+if (navigator.network.connection.type != Connection.NONE) {
+loadIframe();
+}
+
+
 });
 
 
