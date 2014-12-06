@@ -48,7 +48,8 @@ iframe {
 $(window).load(function(){
 
 
-jQuery(document).ready(function ($) {
+//jQuery(document).ready(function ($) {
+var loadIframe = function() {
     $app = $('.app');
 
         $app.addClass('loading');
@@ -91,18 +92,32 @@ $('.loader').remove();
 
 
 document.addEventListener("offline", onOffline, false);
+document.addEventListener("online", onOnline, false);
     
 
 function onOffline() {
+
 alert('This application requires an internet connection');
+
+document.write('This application requires an internet connection <a href="/">retry</a>');
+
+// Not allowed to close app in iOS only works in Android.
 navigator.app.exitApp();
 }
 
-    function onDeviceReady() {
 
+function onOnline() {
+loadIframe();
+}
+
+
+
+    function onDeviceReady() {
 document.addEventListener('deviceready', function() {
   navigator.splashscreen.hide();
 });
+
+
 
 
 //iabRef = window.open('http://www.slicedbreadenterprises.com/cf-ios/index.html','_self','location=no');
