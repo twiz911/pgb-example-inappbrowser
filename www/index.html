@@ -100,7 +100,7 @@ function onOffline() {
 
 alert('This application requires an internet connection');
 
-document.write('This application requires an internet connection <a href="#" onclick='document.location="index.html"'>retry</a>');
+document.write('This application requires an internet connection <a href="#" onclick="location.reload();">retry</a>');
 
 // Not allowed to close app in iOS only works in Android.
 navigator.app.exitApp();
