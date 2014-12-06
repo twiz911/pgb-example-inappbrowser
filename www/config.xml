@@ -22,13 +22,6 @@
 
     <preference name="phonegap-version" value="3.6.3" /> 
 
-<feature name="InAppBrowser">
-  <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
-</feature>
-<feature name="InAppBrowser">
-    <param name="ios-package" value="CDVInAppBrowser" />
-</feature>
-
-<gap:plugin name="org.apache.cordova.inappbrowser"  />
+<gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.4" />
 
 </widget>
